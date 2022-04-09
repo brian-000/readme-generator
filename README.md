@@ -11,9 +11,12 @@ Takes in user input to generate a README.md file using node.js.
 - [Questions](#questions)
 
 ## Installation
-
+https://www.npmjs.com/package/inquirer
+Install npm
+Install inquirer
 
 ## Usage
+Watch the video here: https://watch.screencastify.com/v/wvVEI77116VsM3z2wYIY
 
 ## License 
 The license this application is covered under is : Apache
@@ -23,7 +26,7 @@ The license this application is covered under is : Apache
 Brian
 
 ## Tests
-
+N/A
 
 ## Questions
 For any further questions visit my GitHub:  <a href='github.com/brian-000'>www.github.com/brian-000</a>
