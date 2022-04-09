@@ -18,7 +18,7 @@ Video
 ## Usage
 Image
 ## License
-    The license this application is covered under is : Apache
+The license this application is covered under is : Apache
 <a href = "https://choosealicense.com/licenses/apache-2.0/">Apache License Site</a>
 
 ## Contribution
