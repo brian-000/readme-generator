@@ -1,10 +1,8 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-const generateMarkdown = require('./utils/generateMarkdown');
+const generateMarkdown = require('./Develop/utils/generateMarkdown');
 // TODO: Create an array of questions for user input
-//Description, Table of Contents, Installation, Usage, License, Contributing, 
-//Tests, and Questions
 const questions = [
     {
       type: 'input',
@@ -15,11 +13,6 @@ const questions = [
         type: 'input',
         name: 'description',
         message: 'Enter a Description:'
-    },
-    {
-        type: 'input',
-        name: 'contents',
-        message: 'Enter a table of contents:'
     },
     {
         type: 'input',
@@ -35,7 +28,8 @@ const questions = [
         type: 'checkbox',
         name: 'license',
         message: 'Choose your license:',
-        choices: ['Apache', 'MIT', 'ISC', 'GNU GPLV2', 'GNU GPLV3', 'None']
+        choices: ['Apache', 'MIT', 'ISC', 'GNU GPLV2', 'GNU GPLV3'],
+        default: false
     },
     {
         type: 'input',
@@ -60,7 +54,13 @@ const questions = [
   ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, err => {
+        if (err) throw new Error(err);
+  
+        console.log('Page created! Check out README.md in this directory to see it!');
+      });
+}
 
 // TODO: Create a function to initialize app
 const init = () => {
@@ -71,12 +71,8 @@ const init = () => {
 // Function call to initialize app
 init()
 .then(answers =>{
-    const pageHTML = generateMarkdown(answers)
-
-      fs.writeFile('./README.md', pageHTML, err => {
-      if (err) throw new Error(err);
-
-      console.log('Page created! Check out index.html in this directory to see it!');
-    });
+    const pageReadMe = generateMarkdown(answers)
+    writeToFile('./README.md',pageReadMe)
+   
 });
 
