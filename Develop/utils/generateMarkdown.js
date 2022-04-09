@@ -32,8 +32,8 @@ function renderLicenseLink(license) {
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
   if(license[0] != null){
-    return `## License
-    The license this application is covered under is : ${license}`  
+    return `## License 
+The license this application is covered under is : ${license}`  
   }
   else{
     return '';

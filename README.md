@@ -1,9 +1,7 @@
 # readme-generator
 ## Description
-
-<img src='https://img.shields.io/badge/Apache-%20License-inactive'>
-    
-This README.md generator uses node.js to take in user input and creates a README.md file for your application.
+<img href = 'https://img.shields.io/badge/Apache-%20License-inactive'>
+Takes in user input to generate a README.md file using node.js.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -13,21 +11,21 @@ This README.md generator uses node.js to take in user input and creates a README
 - [Questions](#questions)
 
 ## Installation
-Video
+
 
 ## Usage
-Image
-## License
+
+## License 
 The license this application is covered under is : Apache
 <a href = "https://choosealicense.com/licenses/apache-2.0/">Apache License Site</a>
 
 ## Contribution
-brian-000
+Brian
 
 ## Tests
-N/A
+
 
 ## Questions
 For any further questions visit my GitHub:  <a href='github.com/brian-000'>www.github.com/brian-000</a>
-Or email me: abcde@yahoo.com
+Or email me: abc@yahoo.com
 
