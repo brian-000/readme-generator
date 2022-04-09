@@ -1,7 +1,7 @@
 # readme-generator
 ## Description
 <img src = 'https://img.shields.io/badge/Apache-%20License-inactive'>
-<img src = './images/readme.png'>
+<img src = 'readme-generator/assets/images/readme.png'>
 
 Takes in user input to generate a README.md file using node.js.
 
