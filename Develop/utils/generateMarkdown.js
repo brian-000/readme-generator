@@ -2,9 +2,8 @@
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
   if(license[0]!=null){
-    return `
-    <img src = 'https://img.shields.io/badge/${license}-%20License-inactive'>
-    `  
+    return "<img src = 'https://img.shields.io/badge/${license}-%20License-inactive'>"
+    
   }else{
     return ''
   }
